@@ -129,7 +129,7 @@ int main()
 
     if(bobsAge != -1)
     {
-        printf("Bob is NOT dead.");
+        printf("Bob is alive.");
     }
 }
 ```
@@ -239,3 +239,78 @@ int main()
 ![Visual](https://4.bp.blogspot.com/-0KPDI41veH0/V-OtObm_UWI/AAAAAAAAAso/CkTS0zUMGKIjlE3gUD0fMhmp-B0zcfBmACLcB/s1600/Bitwise-truthtable-Javaform.jpg)
 
 ## Miscellaneous Operators
+
+### The `sizeof()` operator
+
+Gives the size (in bytes) of a datatype.
+
+### The Address Operator (`&`)
+
+Holds the address of a variable in memory.
+
+### The Dereferencing Operator (`*`)
+
+Points to an address of a variable in memory.
+
+### The Ternary Operator (`?:`)
+
+Shorthand statement for an if/else statement.
+
+#### Example
+
+```c
+// Steeve Joseph
+// An example of the ternary operator
+#include <stdio.h>
+
+void stringExample()
+{
+    // NOTE: A string is another data type
+    //  pretty much anything in between double quotes is a string.
+    // The conversion character for a string is "%s"
+    printf("%s", "Hello world!");
+}
+
+int main(void)
+{
+    // This is a short example that illustrates strings in C.
+    stringExample();
+
+    int userAge;
+    printf("Hello, please enter your age:\n");
+    scanf("%d", &userAge);
+
+    if (userAge >= 18)
+        printf("You are an adult.\n");
+
+    else
+        printf("You are not an adult.\n");
+
+    // This is extreme shorthand for the lines above.
+    // Think of it like this:
+    //   (condition) ? *code that should run if condition is true* : *code that should run otherwise*
+    printf("%s", (userAge >= 18) ? "You are an adult" : "You are a minor");
+
+    // Concretely:
+    //   If the userAge is 18 and up, we print the first string.
+    //   Else, we print the second.
+
+    return 0;
+}
+
+
+```
+
+## Operator Precedence
+
+The operator precedende in C is similar to the one in math/science (PEMDAS).
+
+![Operator Precedence Image](https://bit.ly/2mli9Nz)
+
+## Takeaways
+
+1. There a multitude of operators in C
+   - Use arithmetic operators when doing some quick math
+   - Use relational operators when looking for the way that two numbers compare
+   - Use logical operators when looking for o
+   - Use assignment operators as shortcuts for assigning values to variables/constants
