@@ -144,3 +144,17 @@ A common question is, "Why is there a `break` statement in each of the `case` st
 - In a switch statement, after every case, once the code that we want to run runs, we don't want to run any other code in the block, so we break out of the block.
   - This may seem a bit un-intuitive, but essentially it comes down to "It's like that because the people who designed C decided it will be like that."
     - This is kind of a lame answer, but since the goal is to learn to use this tool, I'm just describing the features of the language.
+
+## Takeaways
+
+1. Use `if` statements to run code based on a condition.
+
+## FAQs
+
+### I don't understand what a condition is.
+
+- A: A condition is something that evaluates to `true` or `false`
+
+### Q: Why should I care about `if`?
+
+- A: By itself, it is relatively insignificant, but later on, there are applications wherein knowing how to run code based on a condition is a very valuable skiil, most noatably when writing `loop`s.
