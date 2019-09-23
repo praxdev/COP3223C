@@ -112,20 +112,24 @@ The anatomy of a while loop:
   {
     *code to be run while condition is true*
   }
-
 ```
+
+The while loop does the same thing as the for loop above. 
+* The main difference in the examples are where the increment happens. 
+  * Concretely, while loops are used when it is not known beforehand how many times the loop needs to run. 
+    * If there was a finite starting and ending point, why would someone use a while loop over a for loop?
 
 ## When Do I Know When to Use Which Loop?
 
-Theoretically, any for loop can be written as a while loop, and any while loop can be written as a for loop.
+Theoretically, any `for` loop can be written as a `while` loop, and any `while` loop can be written as a `for` loop. In practice, the `do-while` loop isn't used as often.
 
 **In short, if you have a start and end condition in mind, use a for loop. Else, use a while loop.**
 
 ### Example
 
-- If you were calculating grades for 200 students, you might use a loop to do some math from `i = 0` to `i < 200`. 
+- If you were calculating grades for 200 students, you might use a `for` loop to do some math from `i = 0` to `i < 200`. 
   
-- However, if you didn't know how many students you had at the beginning, you'd probably do the same math in a while loop, until some signal to stop.
+- However, if you didn't know how many students you had at the beginning, you'd probably do the same math in a `while` loop, until some signal to stop.
 
 ## FAQs
 
@@ -139,5 +143,5 @@ Theoretically, any for loop can be written as a while loop, and any while loop c
 
   - **A**: Convention, mostly. Counting in computer science typically starts at 0, mostly because it made a lot of complex math easier.
 
-- **Q**: Sometimes I see int i in the for loop. Why?
-  - **A**: Newer implementations of C allow for the declaration of the counter in the for loop. However, the oolder implementation of C **DOESN'T**. To be safe, I'd say declare your counters outside the loop so that your code is compatible with more (possibly older) systems, e.g. computers at NASA.
+- **Q**: Sometimes I see `int i` in the `for` loop. Why?
+  - **A**: Newer implementations of C allow for the declaration of the counter in the `for` loop. However, the oolder implementation of C **DOESN'T**. To be safe, I'd say declare your counters outside the loop so that your code is compatible with more (possibly older) systems, e.g. computers at NASA.
