@@ -1,4 +1,4 @@
-# Functions
+# Functions (work in progress)
 A function is a block of code that performs some purpose. Some functions you may be familiar with are  `printf()`, `scanf()`, `main()`.
 
 ## Anatomy of a Function
