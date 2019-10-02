@@ -145,6 +145,12 @@ A common question is, "Why is there a `break` statement in each of the `case` st
   - This may seem a bit un-intuitive, but essentially it comes down to "It's like that because the people who designed C decided it will be like that."
     - This is kind of a lame answer, but since the goal is to learn to use this tool, I'm just describing the features of the language.
 
+
+
+## When Should I use `if-else if-else` vs `switch`?
+`switch` staments are usually used when you are enumerating through a finite set of options. 
+
+
 ## Takeaways
 
 1. Use `if` statements to run code based on a condition.
