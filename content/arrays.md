@@ -131,9 +131,9 @@ So, if I knew I was going to enter in the name "steeve":
 int name[7] = {'s', 't', 'e', 'e', 'v', 'e'};
 
 // Somewhere in memory is something like this:
-+-----+-----+-----+-----+-----`+-----+-----+
-| 's' | 't' | 'e' | 'e' | 'v' | 'e' | '\0' |
-+-----+-----+-----+-----+-----`+-----+-----+
++-----+-----+-----+-----+-----`+-----+------+
+| 's' | 't' | 'e' | 'e' | 'v'  | 'e' | '\0' |
++-----+-----+-----+-----+-----`+-----+------+
 ```
 
 ## Inline Array Declaration
