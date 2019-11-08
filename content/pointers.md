@@ -106,7 +106,7 @@ In most other places you use `*`, the star loosely translates to, "contents of".
 ### Illustration
 ```c
 // Steeve Joseph
-// An example of some common string operations w/ string.h
+// An example of using pointers.
 #include <stdio.h>
 
 void swap(int *a, int *b);
